@@ -28,7 +28,7 @@ export const Layout = ({ images, children }: LayoutProps) => {
       >
         {images.map(({ url }, imageIndex) => (
           <Box
-            key={`image-${imageIndex}`}
+            key={`image-${imageIndex}-${url}`}
             width={`${80 / images.length}%`}
             height="max-content"
           >
@@ -39,6 +39,7 @@ export const Layout = ({ images, children }: LayoutProps) => {
               height={500}
               src={url}
               alt={`image-${url}`}
+              loading="eager"
             />
           </Box>
         ))}
