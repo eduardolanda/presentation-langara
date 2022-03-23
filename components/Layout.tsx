@@ -36,7 +36,7 @@ export const Layout = ({ images, children }: LayoutProps) => {
               layout="responsive"
               objectFit="contain"
               width={500}
-              height={700}
+              height={500}
               src={url}
               alt={`image-${url}`}
             />
