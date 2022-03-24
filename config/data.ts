@@ -263,6 +263,21 @@ export const OPTIONS: optionInterface[] = [
     ],
     url: "dev-and-designers",
   },
+  {
+    title: "Thank you",
+    options: [
+      {
+        title: "Eduardo Landa",
+        list: [
+          {
+            text: "Linkedin @eduardolanda",
+          },
+        ],
+      },
+    ],
+    images: [],
+    url: "end",
+  },
 ];
 
 export const KEY_OPTIONS: { [key: string]: number } = OPTIONS.reduce(
