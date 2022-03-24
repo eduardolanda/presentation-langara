@@ -1,10 +1,12 @@
+import { useEffect } from "react";
 import { Layout, CardContent } from "../components";
 import type { CardContentProps } from "../components";
 
 // Navigation
 import { Box, Button } from "@mui/material";
-import Link from "next/link";
 import { ImagesInterface } from "../config";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Navigation = ({
   nextPage,
@@ -13,6 +15,16 @@ const Navigation = ({
   nextPage: string | false;
   backPage: string | false;
 }) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    window.addEventListener("keydown", (event) => {
+      const key = event.key;
+      if (key == "ArrowLeft" && backPage) router.push(backPage);
+      if (key == "ArrowRight" && nextPage) router.push(nextPage);
+    });
+  }, [nextPage, backPage]);
+
   return (
     <Box
       display="flex"

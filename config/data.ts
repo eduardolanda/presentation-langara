@@ -238,7 +238,7 @@ export const OPTIONS: optionInterface[] = [
     title: "Devs and Designers",
     options: [
       {
-        title: "Vancouver",
+        title: "Communication",
         list: [
           {
             text: "Devs need to listen to designers and help them understand the limits",

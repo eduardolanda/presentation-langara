@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 import { ReactElement, ReactNode } from "react";
 import { ImagesInterface } from "../config";
@@ -9,24 +9,36 @@ interface LayoutProps {
 }
 
 export const Layout = ({ images, children }: LayoutProps) => {
+  const matches = useMediaQuery("(min-width:600px)");
+
   return (
     <Box
       display="flex"
       height="100vh"
       flexWrap="wrap"
+      justifyContent="center"
+      // flexDirection={matches ? "column" : "row-reverse"}
       style={{
         borderLeft: "16px solid #F15822",
         borderTop: "16px solid #F15822",
       }}
     >
       <Box
-        flexBasis="50%"
+        // flexBasis="50%"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
+        {children}
+      </Box>
+      <Box
+        flexBasis="40%"
         p={2}
         display="flex"
         justifyContent="space-around"
         alignItems="center"
       >
-        {images.map(({ url }, imageIndex) => (
+        {images.map(({ url, author, author_url }, imageIndex) => (
           <Box
             key={`image-${imageIndex}-${url}`}
             width={`${80 / images.length}%`}
@@ -39,18 +51,21 @@ export const Layout = ({ images, children }: LayoutProps) => {
               height={500}
               src={url}
               alt={`image-${url}`}
-              loading="eager"
             />
+            <Typography
+              mt={2}
+              variant="caption"
+              display="block"
+              fontWeight="bold"
+              gutterBottom
+            >
+              {author ? `Author: ${author}` : ""}
+            </Typography>
+            <Typography variant="caption" display="block" gutterBottom>
+              {author_url ? `${author_url}` : ""}
+            </Typography>
           </Box>
         ))}
-      </Box>
-      <Box
-        flexBasis="50%"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      >
-        {children}
       </Box>
     </Box>
   );
