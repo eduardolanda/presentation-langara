@@ -113,9 +113,6 @@ export const OPTIONS: optionInterface[] = [
             text: "Do not call yourself a junior - Let them decide your level ",
           },
           {
-            text: "Do not tell you to know something if you don’t",
-          },
-          {
             text: "Let them know about your thought process. Think out loud!",
           },
         ],
