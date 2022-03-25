@@ -95,10 +95,13 @@ export const OPTIONS: optionInterface[] = [
         list: [
           { text: "Ask questions about the company and your role " },
           {
-            text: "Logic is the most important skill",
+            text: "Logic is the most important skill for Devs",
           },
           {
-            text: "Don’t talk only about coding, management is important too ",
+            text: "As a Designer they will like to know you are doing research, such as Color Blind properties.",
+          },
+          {
+            text: "Don’t talk only about coding/design, management is important too ",
           },
         ],
       },
@@ -120,7 +123,10 @@ export const OPTIONS: optionInterface[] = [
       {
         title: "Interview Questions",
         list: [
-          { text: "Basic understanding of algorithms " },
+          { text: "Basic understanding of algorithms as a Dev" },
+          {
+            text: "Check their website and talk about improvements you could make",
+          },
           { text: "Share your experience about projects you built" },
           {
             text: "Problems you solved at college",
@@ -144,7 +150,7 @@ export const OPTIONS: optionInterface[] = [
       {
         title: "As Intermediate",
         list: [
-          { text: "Talk about case scenarios where you solve a big issue " },
+          { text: "Talk about case scenarios where you solve a big issue" },
           {
             text: "Mention how you handle performance on your day to day job",
           },
@@ -153,7 +159,7 @@ export const OPTIONS: optionInterface[] = [
       {
         title: "Interview Questions",
         list: [
-          { text: "Basic understanding of algorithms " },
+          { text: "Basic understanding of algorithms" },
           { text: "Share your experience about projects you built" },
           {
             text: "Problems you solved at college",
@@ -179,7 +185,7 @@ export const OPTIONS: optionInterface[] = [
         list: [
           { text: "Project Management is a must class" },
           {
-            text: "It is not about learning Java, PHP or Javascript. It's about knowing ",
+            text: "It is not about learning Java, PHP or Javascript - Figma, Adobe XD, Sketch. It's about knowing",
           },
           { text: "Apply to as many jobs as possible" },
           { text: "Focus on one task at a time" },
@@ -214,7 +220,9 @@ export const OPTIONS: optionInterface[] = [
           {
             text: "It is not about hours, it is about results",
           },
-          { text: "Know which type of company you want to work" },
+          {
+            text: "Know which type of company you want to work ~ Small - Buyable - Scalable Startup",
+          },
         ],
       },
     ],
