@@ -214,12 +214,14 @@ export const OPTIONS: optionInterface[] = [
       {
         title: "Vancouver",
         list: [
-          { text: "Which type and size of company are working?" },
+          {
+            text: "Which type and size of company do you want to work? ~ Small - Buyable - Scalable Startup",
+          },
           {
             text: "It is not about hours, it is about results",
           },
           {
-            text: "Know which type of company you want to work ~ Small - Buyable - Scalable Startup",
+            text: "Your mental health is important for good companies",
           },
         ],
       },
