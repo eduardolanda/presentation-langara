@@ -97,9 +97,7 @@ export const OPTIONS: optionInterface[] = [
           {
             text: "Logic is the most important skill for Devs",
           },
-          {
-            text: "As a Designer they will like to know you are doing research, such as Color Blind properties.",
-          },
+
           {
             text: "Don’t talk only about coding/design, management is important too ",
           },
@@ -114,6 +112,9 @@ export const OPTIONS: optionInterface[] = [
           },
           {
             text: "Let them know about your thought process. Think out loud!",
+          },
+          {
+            text: "As a Designer they will like to know you are doing research, such as Color Blind properties.",
           },
         ],
       },
